@@ -1,0 +1,705 @@
+@import url("node_modules/normalize.css/normalize.css");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Start Of Header And Hero */
+
+[class*='triangle'] {
+    position: relative
+}
+
+.triangle-white::after {
+    content: "";
+    border: 20px solid transparent;
+    border-top-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+#header {
+    width: 100%;
+    height: 700px;
+    border: 1px solid #444;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.30)), url("../images/set1-couple-sitting-outdoors-1500x630.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#header > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#header > nav > ul.navigation {
+    float: right;
+    transform: translateY(-2px);
+}
+
+.website-logo {
+    float: left;
+    display: block;
+    width: 260px;
+    position: relative;
+    top: -15px;
+}
+
+.website-logo > img {
+    display: block;
+    width: 100%;
+}
+
+.website-logo > picture > img {
+    /*border: 1px solid #000;*/
+    width: 270px;
+}
+
+ul.navigation > li {
+    float: left;
+    margin-left: 10px;
+}
+
+ul.navigation > li > a {
+    width: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 3px 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.9em;
+    position: relative;
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+ul.navigation > li > a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+ul.navigation > li:first-child {
+    margin-left: 0;
+}
+
+.navigation > li:first-child > a {
+    border: none;
+}
+
+.bars {
+    float: right;
+    color: #767676;
+    font-size: 1.5em;
+    padding-top: 15px;
+    opacity: 0.8;
+    display: none;
+}
+
+.bars:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hero-section-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+}
+
+.hero-section-slogan > h2 {
+    font-size: 100px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.hero-section-slogan > p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Finish Of Header And Hero */
+/*---------------------------------------------------------------*/
+/* We Are Section */
+
+.similar-section {
+    width: 100%;
+}
+
+.similar-section::after,
+.our_story::after,
+.we-are-time-more::after,
+.our-story-description::after,
+.section-container::after,
+.wedding::after,
+.grooms-and-brides::after,
+.we-are-time::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.we-are-title {
+    width: 100%;
+}
+
+.we-are-title > h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #333;
+    font-weight: 100;
+}
+
+.heart-line {
+    margin: 50px auto;
+    background-color: #c3c3c3;
+    height: 1px;
+    width: 450px;
+    position: relative;
+
+}
+
+.red-text {
+    color: #CF1B15;
+}
+
+.heart-line > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    color: #CF1B15;
+    text-align: center;
+    line-height: 40px;
+    background-color: #FFF;
+}
+
+.heart-line-story i {
+    background-color: #dcdcdc;
+}
+
+.we-are-description {
+    color: #b0b0b0;
+    max-width: 550px;
+    font-size: 17px;
+    margin: 0 auto 50px;
+    line-height: 30px;
+    font-family: Lato;
+}
+
+.we-are-time {
+    width: 100%;
+}
+
+.we-are-time > h2 {
+    font-size: 40px;
+    color: #CF1B15;
+    margin-bottom: 65px;
+}
+
+.we-are-time-more {
+    width: 100%;
+}
+
+.we-are-time-box {
+    width: 25%;
+    height: auto;
+    float: left;
+    background-color: #CF1B15;
+    color: #FFF;
+    font-size: 35px;
+    padding: 20px 0;
+    text-align: center;
+    border-right: 2px solid #FFF;
+}
+
+.we-are-time-box:last-child {
+    border: none;
+}
+
+.we-are-time-box > span {
+    display: block;
+    font-weight: 300;
+}
+
+/* Finish We Are Section */
+
+/*------------------------------------------------------*/
+
+/* Start Our Story */
+
+.our_story {
+    width: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+    position: relative;
+    float: left;
+}
+
+.our_story::before,
+.our_story::after {
+    content: "";
+    border: 20px solid transparent;
+    border-top-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+}
+
+.our_story::after {
+    top: 100%;
+    border-top-color: #dcdcdc;
+}
+
+.our-story-description {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*.our-story-description-side*/
+.our-story-description-side {
+    width: 50%;
+    padding: 0 50px;
+    float: left;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.our-story-description-side > p {
+    color: #9e9e9e;
+}
+
+.who-we-are {
+    width: 100%;
+    padding: 200px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("../images/set1-young-couple-bw.jpg") no-repeat center center / cover fixed;
+    text-align: center;
+}
+
+.who-we-are > h2 {
+    position: relative;
+    top: 75px;
+    font-size: 60px;
+    font-family: "Great Vibes";
+    color: #FFF;
+    font-weight: 100;
+}
+
+.who-we-are > p {
+    font-size: 15px;
+    color: #FFF;
+    position: relative;
+    top: 75px;
+}
+
+/* GB */
+.wedding {
+    width: 100%;
+    margin: auto;
+}
+
+.wedding-box {
+    width: 50%;
+    padding: 0 50px;
+    float: left;
+}
+
+.wedding-box > h2 {
+    margin-bottom: 50px;
+    font-family: "Great Vibes";
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.wedding-box figure {
+    width: 100%;
+    position: relative;
+}
+
+.wedding-box > figure > .wedding-img-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+.wedding-img-holder > img {
+    width: 100%;
+    display: block;
+    transition: 600ms;
+}
+
+.wedding-img-holder:hover > img {
+    transform: scale(1.1);
+}
+
+.wedding-box > figure > figcaption {
+    margin: 20px 0;
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 200;
+}
+
+.wedding-box > figure > p {
+    color: #7d7d7d;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+/* ------------------------------------ */
+.grooms-and-brides {
+    width: 100%;
+    min-height: 150px;
+    background-color: #ccc;
+    float: left;
+    position: relative;
+}
+
+.gb {
+    width: 50%;
+    float: left;
+}
+
+
+.gb-images {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+
+.gb-images > figure {
+    width: 33.3333%;
+    float: left;
+    padding: 15px 25px;
+
+}
+
+.gb-images > figure > img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.grooms {
+    background-color: #bcbcbc;
+}
+
+.brides {
+    background: #e6d2d2;
+}
+
+.gb-title {
+    font-size: 36px;
+    font-family: "Great Vibes";
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 100;
+}
+
+.gb-images > figure > figcaption {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+/* Wedding Details */
+.wedding-details {
+    width: 100%;
+    padding: 220px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent, rgba(0, 0, 0, 0.33)), url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.our-option .wedding-box > figure > figcaption > p {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #7d7d7d;
+}
+
+.our-option .wedding-box > h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.our-option .wedding {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.our-option .wedding-box > p {
+    margin: 15px 0;
+    color: #8b8b8b;
+}
+
+/* Acomodation */
+
+.acomodation::after {
+    content: "";
+    border: 20px solid transparent;
+    border-top-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.who-we-are.acomodation {
+    color: red;
+    height: 250px;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.30)), url("../images/house-croisette-promenade-in-cannes-bw.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Hotel */
+
+.hotels > .wedding-box {
+    width: 33.3333%;
+}
+
+.hotels .wedding-box > h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.hotels .wedding-box > p {
+    font-size: 0.9rem;
+    margin: 20px 0;
+    color: #878787;
+}
+
+.hotels .wedding-box figcaption {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.hotels .wedding-box figcaption > p {
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+.hotels-section-container {
+    max-width: 100%;
+}
+
+.hotels-section-container .wedding-box {
+    max-width: 100%;
+}
+
+.hotels .wedding-box .wedding-img-holder {
+    position: relative;
+}
+
+.hotels .wedding-box .wedding-img-holder::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.hotels .wedding-box .wedding-img-holder:hover::after {
+    opacity: 1;
+}
+
+.hotel-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(207, 27, 21, 0.70);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%) rotate(-35deg) scale(0.7);
+    transition: 500ms;
+    transition-timing-function: cubic-bezier(0, 1.59, .5, 1.43);
+    opacity: 0;
+}
+
+.wedding-img-holder:hover > .hotel-circle {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+}
+
+.hotel-circle > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 40px;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 1280px) {
+    .hotels .wedding-box h2 {
+        font-size: 2.2em;
+    }
+
+    .hotels .wedding-box p {
+        font-size: .7rem;
+    }
+
+    .hotels .wedding-box {
+        padding: 0 30PX;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .navigation {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    #header > nav {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .website-logo {
+        position: relative;
+        top: 1px;
+    }
+
+    .gb-images > figure {
+        width: 50%;
+    }
+
+    .gb-images > figure:nth-child(3) {
+        margin-left: 25%;
+    }
+
+    .hotels > .wedding-box {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .hotels > .wedding-box {
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .we-are-time-box {
+        font-size: 26px;
+    }
+
+    .wedding-box {
+        width: 100%;
+        margin-bottom: 50px;
+        border-bottom: 1px solid silver;
+        padding-bottom: 40px;
+    }
+
+    .hotels > .wedding-box {
+        padding: 0 2px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .we-are-time-box {
+        font-size: 34px;
+        width: 50%;
+        margin-bottom: 2px;
+    }
+
+    .we-are-time-box:nth-child(2) {
+        border: none;
+    }
+
+    .our-story-description-side {
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .gb-images > figure {
+        width: 100%;
+    }
+
+    .gb-images > figure:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .hotels .wedding-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gb-title {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    .we-are-time-box {
+        width: 100%;
+        border: none;
+    }
+
+    .gb-title {
+        font-size: 40px;
+    }
+
+    .heart-line {
+        width: 300px;
+    }
+
+    .gb {
+        width: 100%;
+    }
+
+    .gb-images > figure > figcaption {
+        font-size: 2rem;
+    }
+}
