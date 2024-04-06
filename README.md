@@ -1,4 +1,4 @@
-## Float base landingPage!
+# Wedding landingPage (Float base)
 
 This project is based on float layout. You can see this repo in [This Demo](https://simamatin.github.io/Wedding/) as online.
 
