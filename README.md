@@ -1,4 +1,4 @@
-# Wedding landingPage (Float base)
+# 👰‍♀️👰‍♂️ Wedding landingPage (Float base)
 
 This project is based on float layout.
 
